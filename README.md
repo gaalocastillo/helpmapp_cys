@@ -1,1 +1,2 @@
-# helpmapp_cys
+# helpMapp
+Gestor de Desastres Naturales. Versión Cliente.

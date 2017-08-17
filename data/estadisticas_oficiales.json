@@ -1,0 +1,16 @@
+{
+	"documento": "Informes oficiales:",
+	"rows":
+	[
+		{
+			"nombre": "Datos estadisticos y geograficos de las zonas afectadas por el terremoto",
+			"descripcion": "nformacion cartografica y geografica para pronta respuesta del área afectada por el terremoto del 16 de abril del 2016, con los principales datos estadisticos, asi como de toda la informacion cartografica disponible, de las provincias declaradas en emergencia.",
+			"url": "http://www.ecuadorencifras.gob.ec/documentos/web-inec/Sitios/Datos_terremoto/"
+		},
+		{
+			"nombre": "VDATOS",
+			"descripcion": "Visualizar indicadores sobre eventos extremos y desastres",
+			"url": "http://www.ecuadorencifras.gob.ec//vdatos/"
+		}
+	]
+}
