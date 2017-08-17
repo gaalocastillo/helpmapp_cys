@@ -127,9 +127,9 @@ hr.featurette-divider{
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel {
-  border: 1px solid #d4d4d4;
+  border: 1.5px solid #b1b1b1;
   border-radius: 3px;
-  background-color: #343D8D;
+  background-color: #ffffff;
   color: #666;
   padding: 10px;
   position: relative;
@@ -152,7 +152,7 @@ hr.featurette-divider{
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
-  color: #ece242;
+  color: #343d8d;
   font-size: 1.3em;
 }
 
@@ -161,6 +161,6 @@ hr.featurette-divider{
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-  color: #ece242;
+  color: #343d8d;
   font-size: 1.3em;
 }
