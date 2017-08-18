@@ -1,15 +1,28 @@
 .carousel{
 	margin-bottom: 1%;
 }
+.marcador{
+  background-color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding: 2em;
 
+
+}
+.marcador p{
+  font-size: 6em;
+
+}
+.marcador span{
+  font-size: 2em;
+}
 h2.featurette-heading{
 	margin: 16px;
 	text-align: center;
 }
 
 hr.featurette-divider{
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin: 0;
 	border: dotted #505170;
 	background-color: #505170;
 	border-width:  0.11em ;
