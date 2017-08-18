@@ -74,15 +74,25 @@
     		<h2>
     			Estad&iacute;sticas Nacionales:
     		</h2>
-			<form>
-			  	<div class="form-group row">
-	  			  <div class="col-sm-4 col-form-label"><p class="stat">4571 Kg de comida donados</p></div>
-            <div class="col-sm-4 col-form-label"><p class="stat">441 galones de agua donados</p></div>
-            <div class="col-sm-4 col-form-label"><p class="stat">1451 prendas donadas</p></div>
-      			
-    			</div>
+			
+
+        <div class="container col-sm-12 col-md-12 contenedor-recuadros row">
+          <div class="recuadro col-md-3 col-sm-3">
+            <span id="cantidad">1234 kits</span>
+            <p>de alimentos</p>
+          </div>
+          <div class="recuadro col-md-3 col-sm-3">
+            <span id="cantidad2">235 galones</span>
+            <p>de agua</p>
+          </div>
+          <div class="recuadro col-md-3 col-sm-3">
+            <span id="cantidad3">94 kits</span>
+            <p>de ropa</p>
+          </div>
+        </div>
 
 
+        <form>
 			  	<div class="form-group row">
 	  			    <label for="city" class="col-sm-2 col-form-label">Ciudad: </label>
 				    <div class="col-sm-10">
@@ -92,47 +102,18 @@
     			</div>
 			</form>
     	</div>
-    	<div class="col-md-8"  id ="map">
-			<script>
-				var map;
-			    function initMap() {
-			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: {lat: -2.158596, lng: -79.888239},
-			          zoom: 16
-			        });
-			        var infoWindow = new google.maps.InfoWindow({map: map});
+    	<div class="col-md-9 row">
+        <div class="col-md-4 statImgCont">
+          <img class="statImg" src="../img/Estadistica_Costa.png" alt="costa" width="600" height="500">
+        </div>
+        <div class="col-md-4 statImgCont">
+          <img class="statImg" src="../img/Estadistica_Oriente.png" alt="oriente" width="400" height="400">
+        </div>
+        <div class="col-md-4 statImgCont">
+          <img class="statImg" src="../img/Estadistica_Sierra.png" alt="sierra" width="400" height="400">
+        </div>
 
-			        // Try HTML5 geolocation.
-			        if (navigator.geolocation) {
-			          navigator.geolocation.getCurrentPosition(function(position) {
-			            var pos = {
-			              lat: position.coords.latitude,
-			              lng: position.coords.longitude
-			            };
-			            var zm = {
-			              zoom: 20
-			            };
 
-			            infoWindow.setPosition(pos);
-			            infoWindow.setContent('UPC');
-			            map.setCenter(pos);
-			            map.setZoom(zm)
-			          }, function() {
-			            handleLocationError(true, infoWindow, map.getCenter());
-			          });
-			        } else {
-			          // Browser doesn't support Geolocation
-			          handleLocationError(false, infoWindow, map.getCenter());
-			        }
-			    }
-
-		      	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-		        	infoWindow.setPosition(pos);
-		        	InfoWindowWindow.setContent(browserHasGeolocation ?
-		                              'Error: The Geolocation service failed.' :
-		                              'Error: Your browser doesn\'t support geolocation.');
-		      	}
-			</script>    		
     	</div>
     	</div>
 

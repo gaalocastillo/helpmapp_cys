@@ -15,7 +15,28 @@
 	align-content: center;
 }
 
-.stat{
-	border: 1px dotted;
+.statImgCont{
+	width: 100%;
+}
+
+.statImg{
+	width: 90%;
+
 	padding: 5em;
 }
+
+.recuadro{
+	border-style: dashed;
+	border-width: 0.2em;
+	border-color: #fef20f;
+	margin: 1em;
+	border-radius: 1em;
+	text-align:center;
+	padding: 0.5em;
+
+	
+}
+.recuadro > p{
+	margin-bottom: 0;
+}
+
