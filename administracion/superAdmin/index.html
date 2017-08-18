@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HelpMapp-Sistema de Administración:Index</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <style>
+       #map {
+        height: 560px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+  <header>
+    <div class="container col-md-12 header">
+      <div >
+        <div class="col-sm-4 col-sm-offset-4" id="logoDiv" >
+          <img src="../img/helpmappLogo.png" alt="logo">
+        </div>
+        <a href="../index.html">
+          <div class="col-sm-4 logout">
+            <p id="logout">
+            <img src="../img/cerrar-sesion.png">
+              Cerrar sesi&oacute;n
+            </p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <div id="titleId"  class="col-sm-4 col-sm-offset-4">
+          <h2 id="cabecera">
+            Sistema de administraci&oacute;n
+          </h2>  
+        </div>
+        
+      </div>
+
+      <div>
+        <hr>
+      </div>
+    </div>    
+
+  </header>
+  <div>
+    <section class="col-sm-12 main row container">
+      <div class="col-sm-3 col-md-3 navSuperAdmin">
+            <ul class="nav nav-sidebar">
+              <li class="active"><a href="./index.html">Inicio <span class="sr-only">(current)</span></a></li>
+              <li><a href="./buscarCentroAcopio.html">Buscar centro de acopio</a></li>
+              <li><a href="./configCuenta.html">Configuración</a></li>
+              <li><a href="./crearAdmin.html">Crear cuenta administrador</a></li>
+              <li id="cerrar-sesion"><a href="../index.html"><i class="glyphicon glyphicon-off"></i> Cerrar sesión</a></li>
+            </ul>
+       </div>
+
+      <div class="col-sm-9 col-md-9">
+        <h3 id="pageTitle" >Vista nacional</h3>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+              var uluru = {lat: -2.1524948, lng: -80.1203414};
+              var guayas ={lat:-2.152381,lng:-80.1199501};
+              var nuevo_centro={lat:-1.5808269,lng:-79.0511012};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                minZoom: 7,
+                maxZoom: 7,
+                center: nuevo_centro,
+                
+              });
+              var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Bolívar</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Contribución nacional</b></p>' +
+            '<p style="color:red;"><b>Comida:</b>      100kg (10%)</p>'+
+            '<p style="color:green;"><b>Ropa</b>        100 unidades (8%) </p>'+
+            '<p style="color:blue;"><b>Agua</b>        100 l (12%)</p>'+
+            '</p>'+
+            '<p><a href="../adminCentro/estadisticas_por_canton.html">'+
+            '<b>+ Estadísticas por cantón</b></a> '+
+            '</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        var marker = new google.maps.Marker({
+          position: nuevo_centro,
+          map: map,
+          title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        
+        var infowindow2 = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker2 = new google.maps.Marker({
+          position: guayas,
+          map: map,
+          title: 'Guayas'
+        });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpbmElX0xQcjb9FB3Vk32-lj8kNiXcQ7k&callback=initMap">
+        </script>
+      </div>
+    </section>
+    <div class="footer"> </div>
+   <footer class="col-md-12 footer">
+         <p>Todos los derechos reservados. TAWS 2017.</p>
+    </footer>
+  </div>
+  </body>
+</html>
