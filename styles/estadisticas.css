@@ -14,3 +14,8 @@
 #tabla{
 	align-content: center;
 }
+
+.stat{
+	border: 1px dotted;
+	padding: 5em;
+}
