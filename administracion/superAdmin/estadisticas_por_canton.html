@@ -11,6 +11,8 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
     <link href="css/index-estilo.css" rel="stylesheet">
+    <link href="css/estadisticas_por_canton-estilo.css" rel="stylesheet">
+
     
 
    
@@ -49,98 +51,43 @@
 
   </header>
    
-   <div class="col-sm-2 col-md-2 navSuperAdmin sidebar">
+   <div class="col-sm-3 col-md-3 navbar-div">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Inicio <span class="sr-only">(current)</span><span class="pull-right showopacity glyphicon glyphicon-home"></span></a></li>
-           <li class="dropdown">
-              <a href="#demo" class="dropdown-toggle" data-toggle="collapse">Inventario <span class="caret"></span><span class="pull-right showopacity glyphicon glyphicon-th-list"></span></a>
-              <ul class="nav nav-sidebar sidebar-secundario panel-collapse collapse" id="demo" role="menu">
-              <li ><a href="inventarioComida.html">Comida </a></li>
-              <li><a href="inventarioRopa.html">Ropa</a></li>
-              <li><a href="inventarioAgua.html">Agua</a></li>
+              <li class="active"><a href="./index.html">Inicio <span class="sr-only">(current)</span></a></li>
+              <li><a href="./buscarCentroAcopio.html">Buscar centro de acopio</a></li>
+              <li><a href="./configCuenta.html">Configuración</a></li>
+              <li id="cerrar-sesion"><a href="../index.html"><i class="glyphicon glyphicon-off"></i> Cerrar sesión</a></li>
             </ul>
-
-           </li>
-           
-            
-            <li><a href="crearProducto.html">Agregar producto<span class="pull-right showopacity glyphicon glyphicon-plus"></span></a></li>
-           
-           
-
-             <li class="dropdown">
-              <a href="#demo2" class="dropdown-toggle" data-toggle="collapse">Configuraci&oacute;n <span class="caret"></span><span class="pull-right showopacity glyphicon glyphicon-cog"></span></a>
-              <ul class="nav nav-sidebar sidebar-secundario panel-collapse collapse" id="demo2" role="menu">
-              <li ><a href="configuracionCuenta.html">Configuraci&oacute;n de cuenta </a></li>
-              <li><a href="configuracionCapacidades.html">Configuraci&oacute;n de centro</a></li>
-              
-            </ul>
-
-           </li>
-           
-
-
-
-            <li id="cerrar-sesion"><a href="../index.html">Cerrar sesi&oacute;n<span class="pull-right showopacity glyphicon glyphicon-off"></span></a></li>
-            
-          </ul>
      </div>
+           
+         
      <section class="col-sm-9 col-md-9">
        <div class="container col-sm-9 col-md-9 ">
         <h3>Estadísticas generales</h3> 
       </div>
      
-     <div class="container col-sm-12 col-md-12" id="info-centro">
-       <h4>UPC SALINAS #4</h4>
-       <p><b>Dirección:</b>Maria Luis Gonzalez Rubio Serrano 0 Y Calle Los Almendros</p>
-       <p><b>Ciudad:</b>Salinas</p>
-       <p><b>Provincia:</b>Santa Elena</p>
-
-     </div>
-     <div class="container col-sm-12 col-md-12 contenedor-recuadros">
-       <div class="recuadro col-md-3 col-sm-3">
-         <span id="cantidad-comida">1234 kits</span>
-         <p>de alimentos</p>
+     <div class="container col-sm-12 col-md-12 contenedor-graficas">
+       <div >
+        <div class="titulo-graficas">
+          <h4>Aporte de kilogramos de comida por cantón</h4>   
+        </div>
+         <img src="../img/estadisticas_cantones.png" alt="porcentaje de comida por cantón">
        </div>
-
-       <div class="recuadro col-md-3 col-sm-3">
-         <span id="cantidad-agua">1234 kits</span>
-         <p>de alimentos</p>
+        <div >
+        <div class="titulo-graficas">
+          <h4>Aporte de unidades de ropa por cantón</h4>   
+        </div>
+         <img src="../img/estadisticas_cantones.png" alt="porcentaje de ropa por cantón">
        </div>
-       <div class="recuadro col-md-3 col-sm-3">
-         <span id="cantidad-ropa">1234 kits</span>
-         <p>de alimentos</p>
+       <div >
+       <div class="titulo-graficas">
+          <h4>Aporte de litros de agua por cantón</h4>   
+        </div>
+         <img src="../img/estadisticas_cantones.png" alt="porcentaje de agua por cantón">
        </div>
      </div>
      
-     <div class="container col-sm-12 col-md-12 contenedor-progress-bars">
-        <div class="container caja-progress-bar col-md-3 col-sm-3">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-            40%
-            </div>
-          </div>
-           <p>170kg de 300kg</p> 
-        </div>
-
-        <div class="container caja-progress-bar col-md-3 col-sm-3">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-            40%
-            </div>
-          </div>
-           <p>170kg de 300kg</p> 
-        </div>
-
-        <div class="container caja-progress-bar col-md-3 col-sm-3">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-            40%
-            </div>
-          </div>
-           <p>170kg de 300kg</p> 
-        </div>
-
-     </div>
+     
 
 
 
